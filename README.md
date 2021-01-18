@@ -1,4 +1,4 @@
-ArcadianDigitalMovify
+ARCADIAN DIGITAL MOVIFY
 
 Clone the project git clone "project link"
 Run npm install
