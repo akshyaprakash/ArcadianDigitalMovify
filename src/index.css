@@ -1,0 +1,422 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*:focus {
+  outline-color: transparent;
+}
+::placeholder {
+  color: #6f768d !important;
+}
+.anticon svg {
+  color: #6f768d !important;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+html{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+html::before {
+  content: "";
+  display: block;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: -5px;
+  bottom: 0;
+  left: -5px;
+}
+body{
+  position: relative;
+}
+h1,
+ul {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+header {
+  min-height: 70px;
+  background: #fff;
+  color: #000;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header .logo {
+  margin-left: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.img-width {
+  width: 150px;
+}
+header ul {
+  list-style: none;
+  margin-right: 50px;
+}
+header ul li {
+  display: inline-block;
+}
+header ul li a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #2a2a2a;
+  text-transform: capitalize;
+  opacity: 0.6;
+  padding: 0 15px;
+}
+header ul li a:hover {
+  opacity: 1;
+}
+header .menu,
+header .close {
+  cursor: pointer;
+  text-transform: uppercase;
+  /* border: 1px solid #000; */
+  padding: 10px 20px;
+  margin-right: 13px;
+  display: none;
+  height: 100%;
+  margin-bottom: 10px;
+  font-size: 33px;
+}
+header .close {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  border-radius: 5px;
+  color: #fff;
+}
+/* Background */
+.backgroundWrapper {
+  background: url("https://klbtheme.com/movify/wp-content/uploads/2018/04/movie-collection.jpg");
+  position: relative;
+  padding: 50px 0;
+}
+
+.overlay-gradient:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background: linear-gradient(to bottom, #a11f3c 0%, #9352b3 100%);
+}
+.inner {
+  position: relative;
+  z-index: 10;
+}
+.title {
+  color: #fff;
+  font-weight: 400;
+  margin: 20px 0px;
+  padding: 0;
+  text-transform: capitalize;
+}
+
+/* Search Box */
+.SearchWrap {
+  width: 700px;
+  background: #fff;
+  border-radius: 5px;
+  height: 65px;
+  display: flex;
+  padding: 10px;
+  margin: 0 auto;
+  box-shadow: 0 8px 6px -10px #2a2a2a;
+}
+.searchField {
+  width: 425px;
+  height: 100%;
+  position: relative;
+}
+.searchField input {
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 38px;
+  padding-top: 10px;
+  color: #6f768d;
+}
+.searchButton {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  font-size: 22px;
+  color: #5078ef;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+.cardSection {
+  padding: 20px 0px;
+}
+.ant-card {
+  background: #fff;
+  -webkit-border-radius: 11px !important;
+  -moz-border-radius: 11px !important;
+  border-radius: 11px !important;
+  overflow: hidden;
+  -webkit-box-shadow: 10px 10px 40px 0 rgba(52, 58, 64, 0.1);
+  -moz-box-shadow: 10px 10px 40px 0 rgba(52, 58, 64, 0.1);
+  box-shadow: 10px 10px 40px 0 rgba(52, 58, 64, 0.1);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  max-height: 550px;
+}
+.ant-card h3,
+.ant-card p {
+  color: #3e4555;
+}
+.ant-card:hover {
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+.ant-card-meta-description {
+  height: 72px;
+}
+Button.colorOfButton {
+  margin-top: 10px;
+  background: #9352b3;
+  color: #fff;
+  border-color: #9352b3;
+  margin-right: 10px;
+}
+.pickerSection .ant-picker-input {
+  padding-top: 10px;
+}
+.pickerSection .ant-picker-input > input {
+  font-size: 17px;
+  color: #6f768d !important;
+}
+.ant-picker {
+  font-size: 17px;
+}
+.selectSection .ant-select-selector {
+  margin: 13px 0px;
+}
+.ant-select {
+  font-size: 16px !important;
+  color: #2a2a2a !important;
+}
+.ant-select:not(.ant-select-customize-input).selectSection
+  .ant-select-selector {
+  border: 0px;
+}
+.selectSection .ant-select-arrow {
+  top: 57%;
+  right: 6px;
+  font-size: 15px;
+}
+.ant-select-selection-item {
+  color: #6f768d !important;
+}
+.ant-picker-clear {
+  top: 64% !important;
+  right: 25px !important;
+}
+/* Footer */
+footer {
+  background-color: #2a2a2a;
+  padding: 20px 0px;
+}
+footer p {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 0px !important;
+}
+/* backtotop */
+ #backtotop.visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+#backtotop {
+  position: fixed;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  bottom: 36px;
+  right: 30px;
+  z-index: 999;
+  -webkit-transition: 0.35s;
+  -moz-transition: 0.35s;
+  -ms-transition: 0.35s;
+  -o-transition: 0.35s;
+  transition: 0.35s;
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -o-transform: scale(0.7);
+  transform: scale(0.7);
+  background: #9352b3;
+  border-radius: 23px;
+}
+
+.visible {
+  visibility: visible !important;
+}
+#backtotop a {
+  color: #fff;
+  text-decoration: none;
+  border: 0 none;
+  display: block;
+  width: 46px;
+  height: 46px;
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 26px;
+}
+#backtotop a:after {
+  content: "\f106";
+  font-family: "FontAwesome";
+  position: relative;
+  display: block;
+  top: 50%;
+  -webkit-transform: translateY(-55%);
+  -moz-transform: translateY(-55%);
+  -ms-transform: translateY(-55%);
+  -o-transform: translateY(-55%);
+  transform: translateY(-55%);
+} 
+
+
+
+@media (max-width: 991px) {
+  .SearchWrap {
+    width: 600px;
+  }
+}
+@media (max-width: 750px) {
+  header .logo,
+  header ul {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .ant-card {
+    text-align: center;
+  }
+  .ant-card h3 {
+    font-size: 20px;
+  }
+  /* .ant-card p {
+} */
+  header ul {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background: #2a2a2a;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    z-index: 99;
+    transition: 0.5s linear;
+  }
+  header ul.toggle {
+    right: 0;
+    z-index: 9999;
+    padding-left: 0px !important;
+    padding-top: 18px;
+    padding-right: 14px;
+  }
+  header ul li {
+    line-height: normal;
+    padding-left: 0px !important;
+  }
+  header .menu,
+  header .close {
+    display: block;
+  }
+  header .logo {
+    width: initial;
+    margin-left: 20px;
+    line-height: 70px;
+  }
+  header ul li a {
+    color: #fff;
+  }
+  .SearchWrap {
+    width: 100%;
+  }
+  .ant-picker.ant-picker-borderless.pickerSection {
+    width: 50%;
+  }
+  .ant-select.selectSection.ant-select-single.ant-select-show-arrow {
+    width: 50%;
+  }
+  .searchField {
+    width: 100%;
+    height: 100%;
+    padding-top: 5px;
+  }
+  .searchField input {
+    padding-left: 9px;
+    padding-right: 35px;
+  }
+}
+@media (max-width: 400px) {
+  .SearchWrap {
+    width: 100%;
+    display: block;
+    box-shadow: none;
+  }
+  .ant-picker.ant-picker-borderless.pickerSection {
+    width: 100%;
+    padding-bottom: 13px;
+  }
+  .ant-select.selectSection.ant-select-single.ant-select-show-arrow {
+    width: 100%;
+  }
+  .selectSection .ant-select-arrow {
+    top: 47%;
+    right: 15px;
+    font-size: 15px;
+  }
+  .searchField {
+    width: 100%;
+  }
+  .cardSection {
+    padding: 92px 0px;
+  }
+}
