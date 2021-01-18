@@ -1,3 +1,5 @@
+ArcadianDigitalMovify
+
 Clone the project git clone "project link"
 Run npm install
 Then npm start
